@@ -3,9 +3,9 @@ module.exports = {
   env: {
     browser: true,
     node: true,
-    jest: true,
   },
   extends: [
+    'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
   ],
@@ -18,13 +18,11 @@ module.exports = {
         semi: true,
         useTabs: false,
         tabWidth: 2,
-        printWidth: 80,
+        printWidth: 100,
         bracketSpacing: true,
         arrowParens: 'avoid',
       },
     ],
-    '@typescript-eslint/no-explicit-any': 'off',
-    'prefer-const': 'off',
   },
   parserOptions: {
     parser: '@typescript-eslint/parser',
